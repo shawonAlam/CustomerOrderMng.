@@ -5,9 +5,8 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
 from .decorators import *
-# THis is my 2nd commit
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import Group
+
 from .models import *
 from .forms import *
 from .filters import OrderFilter
@@ -21,11 +20,6 @@ def registerPage(request):
         if form.is_valid():
             user = form.save()
             username = form.cleaned_data.get('username')
-            group = Group.objects.get(name='customer')
-            user.groups.add(group)
-            Customer.objects.create(
-                user=user
-            )
 
             messages.success(request, 'Account is created for ' + username)
             return redirect('login')
