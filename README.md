@@ -1,4 +1,23 @@
 # Django-CustomerOrderMng.
+Login page:<br>
+![](co5.png)
+
+Register page:<br>
+![](co6.png)
+
+Home page:
+![](co1.png)
+
+Ordering page:
+![](co2.png)
+
+Customer page:
+![](co3.png)
+
+Total products and cost page: 
+![](co4.png)
+
+How to run: <br>
 Make sure django is installed properly. <br>
 Step 1: Run python virtual environment. <br>
 Step 2: Goto folder (crm1) where manage.py exists <br>
